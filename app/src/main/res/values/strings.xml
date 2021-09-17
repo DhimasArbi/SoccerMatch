@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Soccer Match</string>
+    <string name="homeTeam">Home Team</string>
+    <string name="team">Manchester United</string>
+    <string name="jmlPlayer">11 player(s)</string>
+    <string name="scoreTeam1">2</string>
+    <string name="scoreTeam2">1</string>
+    <string-array name="teamList1">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="teamList2">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+</resources>
