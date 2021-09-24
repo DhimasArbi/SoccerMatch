@@ -118,8 +118,8 @@
                             android:layout_alignParentStart="false"
                             android:layout_alignParentEnd="true"
                             android:scaleType="fitEnd"
-                            android:src="@drawable/icon_add_button">
-                        </ImageButton>
+                            android:src="@drawable/icon_add_button"
+                            android:background="@color/MediumSeaGreen"></ImageButton>
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -225,9 +225,9 @@
                             android:layout_height="48dp"
                             android:layout_alignParentStart="false"
                             android:layout_alignParentEnd="true"
+                            android:background="@color/CornflowerBlue"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/icon_add_button">
-                        </ImageButton>
+                            android:src="@drawable/icon_add_button"></ImageButton>
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -254,14 +254,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             app:cardCornerRadius="7dp">
-
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/startBtn"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:background="@color/purple_700"
                 android:drawableStart="@drawable/icon_next"
-                android:text="Next" />
+                android:text="Next">
+            </com.google.android.material.button.MaterialButton>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </LinearLayout>
