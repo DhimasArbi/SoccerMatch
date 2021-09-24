@@ -47,7 +47,7 @@
                 android:layout_height="45dp"
                 android:background="@color/DarkGreen"
                 android:gravity="center"
-                android:text="@string/homeLabel"
+                android:text="Home Team"
                 android:textColor="@color/DarkGoldenrod"
                 android:textSize="12pt"
                 android:textStyle="bold"></TextView>
@@ -154,7 +154,7 @@
                 android:layout_height="45dp"
                 android:background="@color/RoyalBlue"
                 android:gravity="center"
-                android:text="@string/awayLabel"
+                android:text="Away Team"
                 android:textColor="@color/DarkGoldenrod"
                 android:textSize="12pt"
                 android:textStyle="bold">
