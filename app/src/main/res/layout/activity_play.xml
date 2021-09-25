@@ -7,7 +7,7 @@
     tools:context=".PlayActivity"
     android:id="@+id/playLayout"
     android:orientation="vertical"
-    android:background="@color/AliceBlue">
+    android:background="@color/SkyBlue">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/playTitleCard"
@@ -19,10 +19,10 @@
         <TextView
             android:id="@+id/playTitleTxt"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:text="Soccer Match Score"
             android:textStyle="bold"
-            android:textSize="28dp"
+            android:textSize="15pt"
             android:textColor="@color/PaleGoldenrod"
             android:gravity="center"
             android:background="@color/BlueViolet">
@@ -39,158 +39,150 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/homeTeamScoreCard"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="7dp"
             app:cardElevation="6dp">
 
             <LinearLayout
                 android:id="@+id/homeTeamLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@color/PowderBlue"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/homeTeam"
                     android:layout_width="180dp"
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
                     android:background="@color/LightSeaGreen"
                     android:gravity="center"
                     android:text="Home Team"
                     android:textColor="@color/Green"
-                    android:textSize="12pt"
+                    android:textSize="10pt"
                     android:textStyle="bold"></TextView>
 
                 <ImageView
                     android:id="@+id/homeLogo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_marginVertical="20dp"
                     android:src="@drawable/teamlogo"></ImageView>
 
                 <TextView
                     android:id="@+id/homeScore"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:text="0"
                     android:textAlignment="center"
                     android:textColor="@color/Black"
-                    android:textSize="75dp"
+                    android:textSize="55dp"
                     android:textStyle="bold"
                     android:background="@color/White"></TextView>
 
                 <LinearLayout
                     android:id="@+id/homeTeamImage"
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingTop="10dp">
 
                     <ImageButton
                         android:id="@+id/addHomeScore"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/PowderBlue"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_goal"></ImageButton>
+                        android:src="@drawable/icon_goal"
+                        android:layout_margin="10dp"></ImageButton>
 
-                    <Space
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"></Space>
+
 
                     <ImageButton
                         android:id="@+id/addHomeYellow"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/PowderBlue"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_yellow_card"></ImageButton>
+                        android:src="@drawable/icon_yellow_card"
+                        android:layout_margin="10dp"></ImageButton>
 
-                    <Space
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"></Space>
 
                     <ImageButton
                         android:id="@+id/addHomeRed"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/PowderBlue"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_red_card"></ImageButton>
+                        android:src="@drawable/icon_red_card"
+                        android:layout_margin="10dp"></ImageButton>
                 </LinearLayout>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="160dp"></Space>
+            android:orientation="vertical"
+            android:gravity="center_vertical">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vs"
-                android:textColor="@color/DarkRed"
-                android:textSize="18dp"
-                android:textStyle="bold">
-            </TextView>
-            <Space
                 android:layout_width="match_parent"
-                android:layout_height="160dp"></Space>
+                android:layout_height="wrap_content"
+                android:text="VS"
+                android:textColor="@color/DarkRed"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textAlignment="center">
+            </TextView>
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/awayTeamScoreCard"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="7dp"
             app:cardElevation="6dp">
 
             <LinearLayout
                 android:id="@+id/awayTeamLayout"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/Tan"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/awayTeam"
                     android:layout_width="180dp"
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
                     android:background="@color/Peru"
                     android:gravity="center"
                     android:text="Away Team"
                     android:textColor="@color/Brown"
-                    android:textSize="12pt"
+                    android:textSize="10pt"
                     android:textStyle="bold"></TextView>
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/awayLogo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_marginVertical="20dp"
                     android:src="@drawable/teamlogo"></androidx.appcompat.widget.AppCompatImageView>
 
                 <TextView
                     android:id="@+id/awayScore"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:text="0"
                     android:textAlignment="center"
                     android:textColor="@color/Black"
-                    android:textSize="75dp"
+                    android:textSize="55dp"
                     android:textStyle="bold"
                     android:background="@color/White"></TextView>
 
@@ -203,38 +195,35 @@
 
                     <ImageButton
                         android:id="@+id/addAwayScore"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/Tan"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_goal"></ImageButton>
+                        android:src="@drawable/icon_goal"
+                        android:layout_margin="10dp"></ImageButton>
 
-                    <Space
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"></Space>
 
                     <ImageButton
                         android:id="@+id/addAwayYellow"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/Tan"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_yellow_card"></ImageButton>
+                        android:src="@drawable/icon_yellow_card"
+                        android:layout_margin="10dp"></ImageButton>
 
-                    <Space
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"></Space>
 
                     <ImageButton
                         android:id="@+id/addAwayRed"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
                         android:adjustViewBounds="true"
                         android:background="@color/Tan"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/icon_red_card"></ImageButton>
+                        android:src="@drawable/icon_red_card"
+                        android:layout_margin="10dp"></ImageButton>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -247,12 +236,11 @@
         android:gravity="center"
         android:padding="10dp">
         <Space
-            android:layout_width="110dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"></Space>
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/timerShow"
                 android:layout_width="wrap_content"
@@ -261,9 +249,12 @@
                 android:text="00:00:00"
                 android:textAlignment="center"
                 android:textColor="@color/Black"
-                android:textSize="45dp"
+                android:textSize="35dp"
                 android:textStyle="bold"></TextView>
         </androidx.cardview.widget.CardView>
+        <Space
+            android:layout_width="150dp"
+            android:layout_height="match_parent"></Space>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/btnLayout"
@@ -273,8 +264,8 @@
         android:gravity="center">
         <Button
             android:id="@+id/matchStartBtn"
-            android:layout_width="150dp"
-            android:layout_height="75dp"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
             android:text="Start"
             android:textSize="20dp"
             android:textColor="@color/LawnGreen"
@@ -287,8 +278,8 @@
         </Space>
         <Button
             android:id="@+id/matchFinishBtn"
-            android:layout_width="150dp"
-            android:layout_height="75dp"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
             android:text="Finish"
             android:textSize="20dp"
             android:textColor="@color/Orange"
